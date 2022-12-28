@@ -1,0 +1,374 @@
+
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.parent {
+    background-color: #eee;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1050px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-gap: 40px;
+}
+ /* start the left hand side */
+.container .info{
+    position: fixed;
+}
+.container .info .a1{
+    display: flex;
+    justify-content: left;
+
+}
+.container .info .a1 img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.container .info .a2 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container .info .a2 a:hover{
+    color: #10cab7;
+}
+.container .info .a2 p{
+    color: #888;
+    line-height: 1.625rem;
+}
+.container .info .a3 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    line-height: 1.625rem;
+    letter-spacing: 1px;
+}
+.container .info .a3 a:hover{
+    color: #10cab7;
+}   
+.container .info .a3 .sites{
+    padding-right: 50%;
+}
+.container .info .a3 .sites i{
+    width: 37px;
+    height: 37px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.container .info .a3 .sites #github:hover{
+    color: blue;
+}
+.container .info .a3 .sites #facebook:hover{
+    color: blue;
+}
+.container .info .a3 .sites #email:hover{
+    color: red;
+}
+.container .info .a3 .sites #telegram:hover{
+    color: rgb(7, 150, 185);
+}
+.container .info .a3 .sites #linkedin:hover{
+    color: blue;
+}
+
+ /* end thq left hand side  */
+
+
+ /* start the right hand side */
+    .container .article{
+        display: grid;
+    }
+    .container .article div{
+        display: relative;
+        width: 100%;
+        height: 540px;
+        /* border-bottom: 1px solid #eee; */
+    }
+    /* one article */
+    .container .article .b1 img{
+        width: 100%;
+    }
+    .container .article .b1 .d1{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+    .container .article .b1 .d1 span{
+        border-radius: 0.9375rem;
+        padding: 0 0.625rem;
+        font-size: .75rem;
+        line-height: 1.625rem;
+    }
+    .container .article .b1 .d1 .web{
+        color: white;
+        height: fit-content;
+        background-color: rgb(0, 110, 255);
+    }
+    .container .article .b1 .d1 .date{
+        padding-left: 0;
+        height: fit-content;
+    }
+    .container .article .b1 a{
+        text-align: left;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 35px;
+        color: #000;
+    }
+    .container .article .b1 p{
+        width: 100%;
+        font-size: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.625rem;
+        direction: rtl;
+    }
+    .container .article .b1 .read{
+        font-size: 20px;
+        color: #10cab7;
+    }
+    /* one article */
+    
+    /* one article */
+    .container .article .b2 img{
+        width: 100%;
+    }
+    .container .article .b2 .d1{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+    .container .article .b2 .d1 span{
+        border-radius: 0.9375rem;
+        padding: 0 0.625rem;
+        font-size: .75rem;
+        line-height: 1.625rem;
+    }
+    .container .article .b2 .d1 .web{
+        color: white;
+        height: fit-content;
+        background-color: rgb(0, 110, 255);
+    }
+    .container .article .b2 .d1 .date{
+        padding-left: 0;
+        height: fit-content;
+    }
+    .container .article .b2 a{
+        text-align: left;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 35px;
+        color: #000;
+    }
+    .container .article .b2 p{
+        width: 100%;
+        font-size: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.625rem;
+        direction: rtl;
+    }
+    .container .article .b2 .read{
+        font-size: 20px;
+        color: #10cab7;
+    }
+    /* one article */
+
+    /* one article */
+    .container .article .c1 img{
+        width: 100%;
+    }
+    .container .article .c1 .d1{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+    .container .article .c1 .d1 span{
+        border-radius: 0.9375rem;
+        padding: 0 0.625rem;
+        font-size: .75rem;
+        line-height: 1.625rem;
+    }
+    .container .article .c1 .d1 .web{
+        color: white;
+        height: fit-content;
+        background-color: rgb(0, 110, 255);
+    }
+    .container .article .c1 .d1 .date{
+        padding-left: 0;
+        height: fit-content;
+    }
+    .container .article .c1 a{
+        text-align: left;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 35px;
+        color: #000;
+    }
+    .container .article .c1 p{
+        width: 100%;
+        font-size: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.625rem;
+        direction: rtl;
+    }
+    .container .article .c1 .read{
+        font-size: 20px;
+        color: #10cab7;
+    }
+    /* one article */
+
+    /* one article */
+    .container .article .c2 img{
+        width: 100%;
+    }
+    .container .article .c2 .d1{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+    .container .article .c2 .d1 span{
+        border-radius: 0.9375rem;
+        padding: 0 0.625rem;
+        font-size: .75rem;
+        line-height: 1.625rem;
+    }
+    .container .article .c2 .d1 .web{
+        color: white;
+        height: fit-content;
+        background-color: rgb(0, 110, 255);
+    }
+    .container .article .c2 .d1 .date{
+        padding-left: 0;
+        height: fit-content;
+    }
+    .container .article .c2 a{
+        text-align: left;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 35px;
+        color: #000;
+    }
+    .container .article .c2 p{
+        width: 100%;
+        font-size: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.625rem;
+        direction: rtl;
+    }
+    .container .article .c2 .read{
+        font-size: 20px;
+        color: #10cab7;
+    }
+    /* one article */
+
+    /* edit on design */
+    .container .article img{
+        width: 100%;
+        height: 30%;
+    }
+    .container .article .c1,
+    .container .article .c2,
+    .container .article .b1,
+    .container .article .b2{
+        box-shadow: 0 0.2rem 0.5rem 0.3rem rgb(0 0 0 / 4%);
+        border-radius: 0.375rem;
+        border-bottom-style: groove;    
+        margin-bottom: 30px;
+    }
+    #date{
+        padding-left: 5px;
+    }
+    #groub{
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    .content{
+        padding: 0 10px;
+    }
+    /* edit on design */
+    /* start footer */
+    .container .article .pre{
+        width: auto;
+        height: 100px;
+        margin-top: 50px;
+    }
+    .container .article .pre i{
+        width: 20px;
+        height: 20px;
+        color: #10cab7;
+        font-size: 20px;
+    }
+    .container .article .pre span{
+        font-size: 40px;
+        color: #10cab7;
+    }
+    .container .article .pre a{
+        font-size: 40px;
+        color: #10cab7;
+        text-decoration: none;
+    }
+    .container .article .next{
+        width: auto;
+        height: 100px;
+        margin-top: 50px;
+        text-align: right;
+    }
+    .container .article .next i{
+        width: 20px;
+        height: 20px;
+        color: #10cab7;
+        font-size: 20px;
+    }
+    .container .article .next span{
+        font-size: 40px;
+        color: #10cab7;
+    }
+    .container .article .next a{
+        font-size: 40px;
+        color: #10cab7;
+        text-decoration: none;
+    }
+    /* end footer */
+
+ /* end the right hand side  */
+
+
+
+
+
+
+
+
+
